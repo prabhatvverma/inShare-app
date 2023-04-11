@@ -1,0 +1,22 @@
+head
+    meta(charset='UTF-8')
+    link(rel='shortcut icon' href='/favicon.ico' type='image/x-icon')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Download | InShare - File Sharing Made Easy
+    link(rel='stylesheet' href='/stylesheets/style.css')
+img.logo(src='/images/logo.png' alt='Inshare logo')
+.containerDownload 
+    section.download
+        img.download__icon(src='/images/download-sd.svg' alt='inshare-download')
+        if(error)
+            h4.downerror !{error} 😏
+        else
+            h2 Your file is ready to download
+            p Link expires in 24 hours
+            .download__meta
+                if(row)
+                    h4 !{row.fileName}
+                    small !{row.fileSize/1000} kB
+                    .send-btn-container
+                        <!-- HTML !-->
+                    a.button-73(role='button' href =`${row.downloadLink}`) Download
