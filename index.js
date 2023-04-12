@@ -35,7 +35,7 @@ app.use(express.json());
 //alternate
 app.use('/api/files', require('./routes/uploadFile'));
 app.use('/files', require("./routes/showFile"));
-app.use('/home', require('./routes/home'))
+app.use('/', require('./routes/home'))
 app.use('/files/download', require('./routes/downloadFile'))
 
 
