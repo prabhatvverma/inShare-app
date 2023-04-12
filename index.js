@@ -9,11 +9,11 @@ const connectDb = require("./config/config")
 connectDb();
 
 //cors
-const corsOptions = {
-    origin: process.env.ALLOWED_CLINTS.split(',')
+// const corsOptions = {
+//     origin: process.env.ALLOWED_CLINTS.split(',')
 
-}
-app.use(cors(corsOptions));
+// }
+// app.use(cors(corsOptions));
 
 //Templet Engine
 
