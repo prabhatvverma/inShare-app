@@ -137,7 +137,7 @@ emailForm.addEventListener("submit", (e) => {
 
     // disable the button
     emailForm[2].setAttribute("disabled", "true");
-    emailForm[2].innerText = "Sending";
+    emailForm[2].innerText = "Sent";
 
     const url = fileURL.value;
 
